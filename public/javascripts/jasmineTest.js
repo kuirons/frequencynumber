@@ -16,4 +16,7 @@ describe("fn", function () {
     it("testcase1", function () {
         expect("").toEqual(fn(""));
     });
+    it("testcase2", function () {
+        expect("输入的类型不是字符串").toEqual(fn(123));
+    });
 });
