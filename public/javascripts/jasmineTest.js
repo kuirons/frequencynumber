@@ -12,8 +12,8 @@ chai.use(sinonChai)
 
 var main=require("./test.js")
 */
-describe("A suite of basic functions", function () {
-    it("test", function () {
-        expect("abcd").toEqual(test("abcd"));
+describe("fn", function () {
+    it("testcase1", function () {
+        expect("").toEqual(fn(""));
     });
 });
