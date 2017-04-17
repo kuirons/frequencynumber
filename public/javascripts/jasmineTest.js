@@ -22,4 +22,8 @@ describe("fn", function () {
     it("testcase2", function () {
         expect("输入的类型不是字符串").toEqual(fn(12.3));
     });
+    it("testcase2", function () {
+        var testarry=new Array([1,"2"])
+        expect("输入的类型不是字符串").toEqual(fn(testarry));
+    });
 });
