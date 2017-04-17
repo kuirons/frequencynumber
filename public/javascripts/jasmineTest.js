@@ -19,11 +19,14 @@ describe("fn", function () {
     it("testcase2", function () {
         expect("输入的类型不是字符串").toEqual(fn(123));
     });
-    it("testcase2", function () {
+    it("testcase3", function () {
         expect("输入的类型不是字符串").toEqual(fn(12.3));
     });
-    it("testcase2", function () {
+    it("testcase4", function () {
         var testarry=new Array([1,"2"])
         expect("输入的类型不是字符串").toEqual(fn(testarry));
+    });
+    it("testcase5", function () {
+        expect("请不要输入缩写").toEqual(fn("it's a Pig"));
     });
 });
