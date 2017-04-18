@@ -29,4 +29,7 @@ describe("fn", function () {
     it("testcase5", function () {
         expect("请不要输入缩写").toEqual(fn("it's a Pig"));
     });
+    it("testcase6", function () {
+        expect("it 1\nis 1\na 1\npig 1\n").toEqual(fn("IT IS A PIG"));
+    });
 });
