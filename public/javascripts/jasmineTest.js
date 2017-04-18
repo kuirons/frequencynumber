@@ -35,4 +35,7 @@ describe("fn", function () {
     it("testcase7", function () {
         expect("输入的字符串包含非法字符").toEqual(fn("IT% IS A PIG"));
     });
+    it("testcase8", function () {
+        expect("输入的字符串包含非法字符").toEqual(fn("it is a pig,it is cute"));
+    });
 });
