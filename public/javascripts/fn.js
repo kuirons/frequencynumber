@@ -11,11 +11,11 @@ function fn(testString) {
     }
     else {
         testString=testString.toLowerCase()
-        var testArray=testString.split(" ")
+        var testArray=testString.split(/[ ]+/)
         var resultArray=new Map()
         var resultFlag=true
         for(var i=0;i<testArray.length;i++) {
-            var reg = /^[a-z]/
+            var reg =  /^[a-z]*$/
             if (testArray[i].indexOf("'") !== -1) {
                 result = "请不要输入缩写"
                 resultFlag=false

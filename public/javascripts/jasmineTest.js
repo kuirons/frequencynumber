@@ -30,6 +30,9 @@ describe("fn", function () {
         expect("请不要输入缩写").toEqual(fn("it's a Pig"));
     });
     it("testcase6", function () {
-        expect("it 1\nis 1\na 1\npig 1\n").toEqual(fn("IT IS A PIG"));
+        expect("it 1\nis 1\na 1\npig 1\n").toEqual(fn("IT     IS A PIG"));
+    });
+    it("testcase7", function () {
+        expect("输入的字符串包含非法字符").toEqual(fn("IT% IS A PIG"));
     });
 });
